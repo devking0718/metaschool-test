@@ -1,0 +1,9 @@
+body {
+    background-image: url('./assets/images/main-bg.svg') !important;
+    background-size: cover;
+}
+
+
+.bg-transparent-1 {
+    background: #0066ff33 !important;
+}
