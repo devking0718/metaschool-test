@@ -40,6 +40,5 @@ db.userAttempt.hasMany(db.assessment);
 db.userAttempt.belongsTo(db.user);
 db.userAttempt.belongsTo(db.assessment, { foreignKey: 'assessmentId' });
 db.assessment.hasMany(db.userAttempt, { foreignKey: 'assessmentId' });
-// db.user.hasMany(db.userAttempt, { foreignKey: 'userId' });
 
 module.exports = db;
