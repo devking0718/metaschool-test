@@ -70,7 +70,7 @@ function HomePage() {
                             {assessmentList ? (
                                 <ListGroup className="rounded-0 bg-transparent-1">
                                     {assessmentList.map((item, index) => (
-                                        <ListGroup.Item className="bg-transparent-1 text-white d-flex align-items-center justify-content-between" key={index}><div className="text-uppercase">{item.title}</div><div>{user?.role === "admin" && (<NavLink to={`/assessment/${item.id}`}><Button className="ms-2 rounded-0 fw-bold">Create Question</Button></NavLink>)}{user?.role === "user" && (<NavLink to={`/attempt/${item.id}`}><Button className="ms-2 rounded-0 fw-bold">Attemp</Button></NavLink>)}</div></ListGroup.Item>
+                                        <ListGroup.Item className="bg-transparent-1 text-white d-flex align-items-center justify-content-between" key={index}><div className="text-uppercase">{item.title}</div><div>{user?.role === "admin" && (<NavLink to={`/assessment/${item.id}`}><Button className="ms-2 rounded-0 fw-bold">View</Button></NavLink>)}{user?.role === "user" && (<NavLink to={`/attempt/${item.id}`}><Button className="ms-2 rounded-0 fw-bold">Attempt</Button></NavLink>)}</div></ListGroup.Item>
                                     ))}
                                 </ListGroup>
                             ) : (

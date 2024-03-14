@@ -81,7 +81,6 @@ module.exports = {
 
             res.status(200).json({ message: 'All attempt list', data: result });
         } catch (error) {
-            console.log(error)
             res.status(500).json({ error: 'Error', 'Server Error:': error });
         }
     },
